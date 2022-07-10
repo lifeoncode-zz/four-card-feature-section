@@ -1,0 +1,56 @@
+// typefaces
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+// reset browser css
+* {
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+// colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$very-dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$very-light-gray: hsl(0, 0%, 98%);
+
+// mixins
+@mixin flex($align:center, $justify:center, $direction:row, $wrap:wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($columns:1fr, $gap:20px) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-gap: $gap;
+}
+
+// container
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1030px) {
+        max-width: 95%;
+    }
+
+    @media only screen and (max-width: 890px) {
+        max-width: 60%;
+    }
+
+    @media only screen and (max-width: 630px) {
+        max-width: 95%;
+    }
+}

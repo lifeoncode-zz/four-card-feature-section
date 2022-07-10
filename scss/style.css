@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1030px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .container {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+body {
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 50px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 200;
+  color: #4c4e61;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+header h1 .highlight {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 450px) {
+  header h1 {
+    font-size: 25px;
+  }
+}
+
+header p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #a3a5ae;
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 930px) {
+  header p {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  header p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  header {
+    padding: 30px 0;
+  }
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+main .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 890px) {
+  main .container {
+    display: block;
+  }
+}
+
+main .card {
+  position: relative;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 4px 16px rgba(3, 44, 102, 0.212);
+          box-shadow: 4px 4px 16px rgba(3, 44, 102, 0.212);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main .card .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+main .card h3 {
+  font-size: 18px;
+  color: #4c4e61;
+}
+
+main .card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #a3a5ae;
+  font-weight: 200;
+  margin: 10px 0 80px 0;
+}
+
+main .card img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+}
+
+@media only screen and (max-width: 890px) {
+  main .card {
+    margin-bottom: 20px;
+  }
+}
+
+main .supervisor {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .supervisor .line {
+  background-color: #45d3d3;
+}
+
+main .team {
+  margin-bottom: 20px;
+}
+
+main .team .line {
+  background-color: #ea5353;
+}
+
+main .karma .line {
+  background-color: #fcaf4a;
+}
+
+main .calculator {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .calculator .line {
+  background-color: #549ef2;
+}
+/*# sourceMappingURL=style.css.map */
